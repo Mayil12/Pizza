@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Good Pizza, Great Pizza</title>
+  <style>
+    body {
+      font-family: "Futura", sans-serif;
+      margin: 0; 
+      padding: 0; 
+      min-height: 100vh; 
+      display: flex;
+      flex-direction: column;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+    p {text-align: center;}
+    h2 { text-align: center;}
+    .content {margin-top: 400px; flex:1; }
+    nav a{color: orange;}
+    nav a {
+      color: orange;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: orange; 
+      text-align: center; 
+      padding: 10px; 
+      position: fixed; 
+      bottom: 0; 
+      width: 100%;
+    }
+  </style>
+</head>
+<body style="background-color: lightgray;">
+  <div style="position: relative; text-align: center;"></div>
+    <img src="pizza.jpg" alt="Pizza Background" style="width: 100%; height: auto; opacity: 0.5; position: absolute; top: 0; left: 0; z-index: -1;">
+    <h1>Welcome to Good Pizza, Great Pizza</h1>
+  </div>
+  <nav>
+    <div class="sitemap" style="text-align: center;">
+      <h2>Site Map</h2>
+      <div style="display: flex; justify-content: center; gap: 15px;">
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+  <p>Your go-to place for the best pizza in town! We offer a wide variety of pizzas made from fresh ingredients and delivered to your door.</p>
+  
+  <h2>Our Specialties</h2>
+  <p>From classic Margherita to our signature Chicken pizza, we have something to satisfy every craving. Don't forget to try our refreshing beverages!</p>
+
+  <h2>Order Now</h2>
+  <p>Ready to indulge? <strong>Order now</strong> and enjoy pizza at any time. We offer fast, reliable delivery to your home or office.</p>
+  
+  <div class="content"></div>
+  <footer>
+    <p>© <span id="currentYear"></span> Good Pizza, Great Pizza - All Rights Reserved </p>
+  </footer>
+
+  <script>
+    
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
