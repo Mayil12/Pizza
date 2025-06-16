@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: "Futura", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .sitemap {
+            margin: 20px 0;
+        }
+
+        section {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: orange;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+        }
+
+        .background-image {
+            position: relative;
+            text-align: center;
+        }
+
+        .background-image img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <img src="Pizza chef.jpg" alt="Pizza Background">
+    </div>
+
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <div class="sitemap">
+                <h2>Site Map</h2>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                    <a href="index.html">Index</a>
+                    <a href="about.html">About</a>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>We strive to make local authentic pizza for our customers that brings the original recipe to your plate.</p>
+        </section>
+        
+        <section>
+            <h2>Our History</h2>
+            <p>This is a family-run business that opened in 1990 to share the authentic experience for everyone.</p>
+        </section>
+    </main>
+    <footer></footer>
+        <p>© 1990 - <script>document.write(new Date().getFullYear());</script> Good Pizza, Great Pizza - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
